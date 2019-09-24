@@ -25,7 +25,7 @@ services:
       - description: "11.0-alpine"
         value: "11.0-alpine"
     source:
-      image: <registry fqdn>/app-template/simple-nginx-db:latest # <--- replace <registry fqdn>
+      image: dtr.west.us.se.dckr.org/app-template/simple-nginx-db:latest # <--- replace <registry fqdn>
     title: PostgreSQL 
 - apiVersion: v1alpha1
   kind: ServiceTemplate
@@ -54,7 +54,7 @@ services:
       name: externalPort
       type: hostPort
     source:
-      image: <registry fqdn>/app-template/simple-nginx-front-end:latest # <--- replace <registry fqdn>
+      image: dtr.west.us.se.dckr.org/app-template/simple-nginx-front-end:latest # <--- replace <registry fqdn>
     title: NGINX
 templates:
   - apiVersion: v1alpha1
