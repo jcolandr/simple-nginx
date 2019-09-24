@@ -7,7 +7,7 @@ DOCKER_IMAGE_REPOSITORY_PROD = "${DOCKER_IMAGE_REPOSITORY}-prod"
 DOCKER_IMAGE_TAG = "${env.BUILD_TIMESTAMP}"
 
 // Available orchestrators = [ "kubernetes" | "swarm" ]
-DOCKER_ORCHESTRATOR = "kubernetes"
+DOCKER_ORCHESTRATOR = "swarm"
 
 if(DOCKER_ORCHESTRATOR.toLowerCase() == "kubernetes"){
     DOCKER_KUBERNETES_NAMESPACE = "se-${DOCKER_USER_CLEAN}"
